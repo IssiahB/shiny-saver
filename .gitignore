@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# py
+env/
+__pycache__/
+*.pyc

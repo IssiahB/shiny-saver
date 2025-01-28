@@ -1,8 +1,8 @@
-# Finance Tracker App
+# Shiny Saver
 
 ## **Project Summary**
 
-The **Finance Tracker App** is a full-stack application designed to demonstrate skills in building and deploying a robust, intuitive solution for tracking income, expenses, and budgets. It provides users with an easy-to-use interface and secure backend functionality.
+**Shiny Saver** is a full-stack application designed to demonstrate skills in building and deploying a robust, intuitive solution for tracking income, expenses, and budgets. It provides users with an easy-to-use interface and secure backend functionality.
 
 ---
 
@@ -40,10 +40,11 @@ The **Finance Tracker App** is a full-stack application designed to demonstrate 
 
 ### **Frontend**
 
-Folder: `finance-tracker-frontend/`
+Folder: `shiny-saver/`
 
 ```
 src/
+    ├── assets/           # Assets not public
     ├── components/       # Reusable UI components
     ├── pages/            # Page components (e.g., Dashboard, Login)
     ├── store/            # Redux slices and store
@@ -54,18 +55,20 @@ src/
 
 ### **Backend**
 
-Folder: `finance-tracker-backend/`
+Folder: `finance_backend/`
 
 ```
-app/
-    ├── __init__.py       # Flask app factory
-    ├── models.py         # SQLAlchemy models
-    ├── routes.py         # API endpoints
-    ├── schemas.py        # Marshmallow schemas
-    ├── auth.py           # JWT authentication logic
-    └── config.py         # App configuration (e.g., database URI)
-requirements.txt          # Backend dependencies
-run.py                    # Flask app runner
+    ├── app/                  # Flask app directory
+    │   ├── __init__.py       # Flask app factory
+    │   ├── models.py         # SQLAlchemy models
+    │   ├── routes.py         # API endpoints
+    │   ├── schemas.py        # Marshmallow schemas
+    │   ├── auth.py           # JWT authentication logic
+    │   └── config.py         # App configuration (e.g., database URI)
+    ├── env/                  # Virtual environment (ignored in version control)
+    ├── requirements.txt      # Dependency list
+    └── run.py                # Flask app runner
+
 ```
 
 ---
